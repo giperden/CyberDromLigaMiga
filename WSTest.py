@@ -24,7 +24,7 @@ def getVid():
                 np.frombuffer(raw_frame, dtype=np.uint8), cv2.IMREAD_COLOR
             )
             cv2.imshow("video", frame)  # Show an image on the screen
-        except Exception: print('======ERRRROOOR  ZOV ZOV')
+        except Exception: print('Error')
         
 
         if cv2.waitKey(1) == 27:  # Exit if the ESC key is pressed
