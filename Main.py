@@ -1,4 +1,4 @@
-from pion import Pion
+from pioneer_sdk import Pioneer
 import time
 import numpy as np
 import cv2
@@ -9,7 +9,7 @@ control_port = 8001
 video_port = 18001
 
 # Инициализация дрона с дополнительными параметрами для отладки
-drone = Pion(
+pioneer = Pioneer(
     ip="127.0.0.1",
     mavlink_port=control_port,
     logger=True,  # Включаем логирование
